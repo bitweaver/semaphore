@@ -1,7 +1,7 @@
 <?php
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.1 $
+ * @version  $Revision: 1.2 $
  * @package  Pigeonholes
  * @subpackage functions
  */
@@ -20,10 +20,10 @@ if( $gBitSystem->isPackageActive( 'semaphore' )) {
 
 	$gLibertySystem->registerService( LIBERTY_SERVICE_ACCESS_CONTROL, SEMAPHORE_PKG_NAME, array(
 		// functions
-		// Please note that we can't use the content_store_function since it's called to late - half way through the store process
 		'content_load_sql_function' => 'semaphore_load_sql',
 		'content_edit_function'     => 'semaphore_content_edit',
 		'content_preview_function'  => 'semaphore_content_preview',
+		'content_store_function'    => 'semaphore_content_store',
 
 		// templates
 		'content_icon_tpl'          => 'bitpackage:semaphore/semaphore_icon_inc.tpl',
