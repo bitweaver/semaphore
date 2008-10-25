@@ -1,7 +1,7 @@
 <?php
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2 $
+ * @version  $Revision: 1.3 $
  * @package  Pigeonholes
  * @subpackage functions
  */
@@ -24,6 +24,7 @@ if( $gBitSystem->isPackageActive( 'semaphore' )) {
 		'content_edit_function'     => 'semaphore_content_edit',
 		'content_preview_function'  => 'semaphore_content_preview',
 		'content_store_function'    => 'semaphore_content_store',
+		'content_expunge_function'  => 'semaphore_content_store',
 
 		// templates
 		'content_icon_tpl'          => 'bitpackage:semaphore/semaphore_icon_inc.tpl',
