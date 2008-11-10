@@ -10,7 +10,7 @@ $gBitInstaller->registerPackageInfo( SEMAPHORE_PKG_NAME,
 
 $tables = array(
 	'semaphore' => "
-		content_id C(250) PRIMARY,
+		content_id I4 PRIMARY,
 		user_id I4 NOTNULL,
 		ip C(16) NOTNULL,
 		created I8
@@ -23,17 +23,16 @@ foreach( array_keys( $tables ) AS $tableName ) {
 }
 
 /*
-// ### Sequences
-$sequences = array();
-$gBitInstaller->registerSchemaSequences( USERS_PKG_NAME, $sequences );
+### Sequences
+$gBitInstaller->registerSchemaSequences( USERS_PKG_NAME, array() );
 
-// ### Default Preferences
+### Default Preferences
 $gBitInstaller->registerPreferences( USERS_PKG_NAME, array() );
 
-//$indices = array ();
-$gBitInstaller->registerSchemaIndexes( USERS_PKG_NAME, $indices );
+### Indicies
+$gBitInstaller->registerSchemaIndexes( USERS_PKG_NAME, array() );
 
-// ### Default Permissions
+### Default Permissions
 $gBitInstaller->registerUserPermissions( USERS_PKG_NAME, array() );
 */
 
