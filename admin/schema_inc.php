@@ -12,7 +12,7 @@ $tables = array(
 	'semaphore' => "
 		content_id I4 PRIMARY,
 		user_id I4 NOTNULL,
-		ip C(16) NOTNULL,
+		ip C(39) NOTNULL,
 		created I8
 		CONSTRAINT	', CONSTRAINT `semaphore_content_ref` FOREIGN KEY (`content_id`) REFERENCES `".BIT_DB_PREFIX."liberty_content` (`content_id`)'
 	",
