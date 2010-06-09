@@ -1,6 +1,6 @@
 <?php
 /**
- * @version  $Header: /cvsroot/bitweaver/_bit_semaphore/admin/admin_semaphore_inc.php,v 1.2 2008/10/19 07:14:21 squareing Exp $
+ * @version  $Header$
  * @package  semaphore
  */
 $limit = array(

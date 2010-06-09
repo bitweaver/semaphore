@@ -3,7 +3,7 @@
  * Management of Liberty content
  *
  * @package  semaphore
- * @version  $Header: /cvsroot/bitweaver/_bit_semaphore/Semaphore.php,v 1.2 2008/10/19 07:14:21 squareing Exp $
+ * @version  $Header$
  */
 
 /**
