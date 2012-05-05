@@ -16,7 +16,7 @@ class Semaphore extends BitBase {
 	 * Semaphore Initialisation
 	 */
 	function Semaphore() {
-		BitBase::BitBase();
+		parent::__construct();
 	}
 
 	/**
