@@ -12,12 +12,6 @@
 require_once( KERNEL_PKG_PATH.'BitBase.php' );
 
 class Semaphore extends BitBase {
-	/**
-	 * Semaphore Initialisation
-	 */
-	function Semaphore() {
-		parent::__construct();
-	}
 
 	/**
 	 * store 
