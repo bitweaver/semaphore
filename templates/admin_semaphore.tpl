@@ -3,7 +3,7 @@
 	<input type="hidden" name="page" value="{$page}" />
 
 	{legend legend="Semaphore Settings"}
-		<div class="control-group">
+		<div class="form-group">
 			{formlabel label="Warning time" for="semaphore_limit"}
 			{forminput}
 				{html_options name="semaphore_limit" options=$limit values=$limit selected=$gBitSystem->getConfig('semaphore_limit') id=semaphore_limit} {tr}minute(s){/tr}
@@ -12,7 +12,7 @@
 		</div>
 	{/legend}
 
-	<div class="control-group submit">
+	<div class="form-group submit">
 		<input type="submit" class="btn btn-default" name="change_prefs" value="{tr}Change preferences{/tr}" />
 	</div>
 {/form}
